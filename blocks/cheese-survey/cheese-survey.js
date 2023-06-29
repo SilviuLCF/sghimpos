@@ -9,7 +9,7 @@ export default async function init(el) {
   const french = createTag('option', { value: 'french'}, 'French');
   const romanian = createTag('option', { value: 'romanian'}, 'Romanian');
   const submit = createTag('button', { class: 'cheese-form-submit'}, 'Send your preference');
-  select.append(swiss, french);
+  select.append(swiss, french, romanian);
   form.append(label, select, submit);
   el.append(form);
 
